@@ -10,6 +10,8 @@
     <PackageReleaseNotes>First release with a Repository and UnitOfWork implementations</PackageReleaseNotes>
     <RepositoryType>c#</RepositoryType>
     <PackageTags>repository unitofwork dapper</PackageTags>
+    <PackageProjectUrl>https://github.com/m4cm3nz/Infrastructure.Data.Dapper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/m4cm3nz/Infrastructure.Data.Dapper</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
