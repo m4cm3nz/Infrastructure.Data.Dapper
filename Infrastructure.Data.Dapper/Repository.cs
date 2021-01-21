@@ -1,6 +1,6 @@
 ﻿using Infrastructure.Data.Abstractions;
 
-namespace Refere.Infrastructure.Data.Dapper
+namespace Infrastructure.Data.Dapper
 {
     public class Repository<TEntity> : BaseRepository<TEntity> where TEntity : class
     {

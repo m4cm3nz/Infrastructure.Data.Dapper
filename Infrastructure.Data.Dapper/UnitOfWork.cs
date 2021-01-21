@@ -4,7 +4,7 @@ using System.Data;
 using System.Data.Common;
 using System.Threading.Tasks;
 
-namespace Refere.Infrastructure.Data.Dapper
+namespace Infrastructure.Data.Dapper
 {
     public sealed class UnitOfWork : IUnitOfWork
     {

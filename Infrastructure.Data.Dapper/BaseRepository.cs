@@ -6,7 +6,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Refere.Infrastructure.Data.Dapper
+namespace Infrastructure.Data.Dapper
 {
     public abstract class BaseRepository<TEntity> :
         IRepository<TEntity>
