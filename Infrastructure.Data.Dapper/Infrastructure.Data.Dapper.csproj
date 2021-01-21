@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Rafael Mac Menz</Authors>
+    <Company>McMenz IT</Company>
+    <Description>A .NET Core 3.1 Repository and UnitOfWork implementation over Dapper.Contrib</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReleaseNotes>First release with a Repository and UnitOfWork implementations</PackageReleaseNotes>
+    <RepositoryType>c#</RepositoryType>
+    <PackageTags>repository unitofwork dapper</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper.Contrib" Version="2.0.78" />
+    <PackageReference Include="Infrastructure.Data.Abstractions" Version="1.0.1" />
+  </ItemGroup>
+
+</Project>
