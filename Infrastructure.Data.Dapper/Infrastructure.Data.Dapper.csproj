@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -20,6 +20,7 @@
   <ItemGroup>
     <PackageReference Include="Dapper.Contrib" Version="2.0.78" />
     <PackageReference Include="Infrastructure.Data.Abstractions" Version="1.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
   </ItemGroup>
 
 </Project>

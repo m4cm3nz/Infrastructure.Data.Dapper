@@ -8,18 +8,23 @@ namespace Infrastructure.Data.Dapper
 {
     public sealed class UnitOfWork : IUnitOfWork
     {
+        private Guid _id = Guid.Empty;
+        private readonly IDbConnectionFactory _connectionFactory;
         private DbConnection _connection = null;
 
-        public UnitOfWork(DbConnection connection)
+        public UnitOfWork(IDbConnectionFactory connectionFactory)
         {
             _id = Guid.NewGuid();
-            _connection = connection;
+            _connectionFactory = connectionFactory;
         }
-
-        private Guid _id = Guid.Empty;
 
         public async Task<IDbConnection> GetOpenedConnectionAsync()
         {
+            if (_connection is null)
+            {
+                _connection = await _connectionFactory.CreateAsync();
+            }
+
             if (_connection.State == ConnectionState.Closed)
                 await _connection.OpenAsync();
             else if (_connection.State == ConnectionState.Broken)
