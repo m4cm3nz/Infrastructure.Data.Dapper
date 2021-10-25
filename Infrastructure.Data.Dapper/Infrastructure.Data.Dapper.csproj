@@ -1,25 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Rafael Mac Menz</Authors>
     <Company>McMenz IT</Company>
-    <Description>A .NET Core 3.1 Repository and UnitOfWork implementation over Dapper.Contrib</Description>
+    <Description>A .NET 5.0 Repository and UnitOfWork implementation over Dapper.Contrib</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageReleaseNotes>First release with a Repository and UnitOfWork implementations</PackageReleaseNotes>
+    <PackageReleaseNotes>upgrade to .net 5.0</PackageReleaseNotes>
     <RepositoryType>c#</RepositoryType>
     <PackageTags>repository unitofwork dapper</PackageTags>
     <PackageProjectUrl>https://github.com/m4cm3nz/Infrastructure.Data.Dapper</PackageProjectUrl>
     <RepositoryUrl>https://github.com/m4cm3nz/Infrastructure.Data.Dapper</RepositoryUrl>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.1.0</FileVersion>
-    <Version>1.0.1</Version>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <FileVersion>2.0.0.0</FileVersion>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Dapper.Contrib" Version="2.0.78" />
-    <PackageReference Include="Infrastructure.Data.Abstractions" Version="1.0.1" />
+    <PackageReference Include="Infrastructure.Data.Abstractions" Version="2.0.0" />
   </ItemGroup>
 
 </Project>
