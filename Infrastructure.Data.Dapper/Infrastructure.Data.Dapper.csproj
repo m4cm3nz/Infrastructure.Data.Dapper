@@ -1,25 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Rafael Mac Menz</Authors>
     <Company>McMenz IT</Company>
-    <Description>A .NET 5.0 Repository and UnitOfWork implementation over Dapper.Contrib</Description>
+    <Description>A .NET 6.0 Repository and UnitOfWork implementation over Dapper.Contrib</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageReleaseNotes>upgrade to .net 5.0</PackageReleaseNotes>
+    <PackageReleaseNotes>upgrade to .net 6.0</PackageReleaseNotes>
     <RepositoryType>c#</RepositoryType>
     <PackageTags>repository unitofwork dapper</PackageTags>
     <PackageProjectUrl>https://github.com/m4cm3nz/Infrastructure.Data.Dapper</PackageProjectUrl>
     <RepositoryUrl>https://github.com/m4cm3nz/Infrastructure.Data.Dapper</RepositoryUrl>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <FileVersion>2.0.0.0</FileVersion>
-    <Version>2.0.0</Version>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <FileVersion>6.0.0.0</FileVersion>
+    <Version>6.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Dapper.Contrib" Version="2.0.78" />
-    <PackageReference Include="Infrastructure.Data.Abstractions" Version="2.0.0" />
+    <PackageReference Include="Infrastructure.Data.Abstractions" Version="6.0.0" />
   </ItemGroup>
 
 </Project>
