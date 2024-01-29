@@ -6,17 +6,10 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Data.Dapper
 {
-    public sealed class UnitOfWork : IUnitOfWork
+    public sealed class UnitOfWork(DbConnection connection) : IUnitOfWork
     {
-        private DbConnection _connection = null;
-
-        public UnitOfWork(DbConnection connection)
-        {
-            _id = Guid.NewGuid();
-            _connection = connection;
-        }
-
-        private Guid _id = Guid.Empty;
+        private DbConnection _connection = connection;
+        private readonly Guid _id = Guid.NewGuid();
 
         public async Task<IDbConnection> GetOpenedConnectionAsync()
         {
@@ -62,8 +55,7 @@ namespace Infrastructure.Data.Dapper
 
         private void DisposeTransaction()
         {
-            if (Transaction != null)
-                Transaction.Dispose();
+            Transaction?.Dispose();
             Transaction = null;
         }
     }

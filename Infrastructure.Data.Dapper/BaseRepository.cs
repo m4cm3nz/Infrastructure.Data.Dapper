@@ -8,17 +8,12 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Data.Dapper
 {
-    public abstract class BaseRepository<TEntity> :
+    public abstract class BaseRepository<TEntity>(IUnitOfWork unitOfWork) :
         IRepository<TEntity>
         where TEntity : class
     {
-        protected readonly IUnitOfWork _unitOfWork;
-
-        public BaseRepository(IUnitOfWork unitOfWork)
-        {
-            _unitOfWork = unitOfWork ?? throw new
+        protected readonly IUnitOfWork _unitOfWork = unitOfWork ?? throw new
                 ArgumentException(nameof(unitOfWork));
-        }
 
         public virtual async Task<dynamic> Add(TEntity entity)
         {
